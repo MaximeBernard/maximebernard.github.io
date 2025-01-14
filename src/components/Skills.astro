@@ -1,0 +1,163 @@
+---
+import Icon from "./Icon.astro";
+---
+
+<section class="box">
+  <h2><Icon icon="terminal-window" color="var(--accent-regular)" size="2rem" />Engineering Skills</h2>
+  <div class="skills">
+    <div class="stack gap-2 lg:gap-4">
+      <h3>TypeScript</h3>
+      <p>My favorite language, combining static typing with flexibility to build clean, scalable, and maintainable applications. Proficient in leveraging advanced features like generics and type guards for robust development.</p>
+    </div>
+    <div class="stack gap-2 lg:gap-4">
+      <h3>React</h3>
+      <p>Extensive experience with React, my go-to library for building dynamic, performant, and user-friendly interfaces. Skilled in designing reusable components, managing state effectively with hooks or context, and optimizing performance for seamless user experiences.</p>
+    </div>
+    <div class="stack gap-2 lg:gap-4">
+      <h3>NodeJS</h3>
+      <p>Node.js offers a vast ecosystem and solid performance, but its biggest advantage is enabling the use of the same language, TypeScript, on both frontend and backend. This consistency simplifies development, improves collaboration, and speeds up the delivery of scalable applications.</p>
+    </div>
+    <div class="stack gap-2 lg:gap-4">
+      <h3>Functional Programming</h3>
+      <p>I’ve learned both OOP and FP, but lately, I’ve come to appreciate FP for its simplicity and effectiveness. Immutability, higher-order functions, and declarative patterns, when applied correctly, make it easier to build clean, scalable, and maintainable code in TypeScript.</p>
+    </div>
+    <div class="stack gap-2 lg:gap-4">
+      <h3>CI/CD</h3>
+      <p>Implemented and optimized continuous integration and deployment pipelines to ensure fast, reliable, and seamless deliveries. Automated testing, builds, and deployments on cloud environments (GCP, Kubernetes) while embracing a DevOps approach.</p>
+    </div>
+    <div class="stack gap-2 lg:gap-4">
+      <h3>Infra As Code</h3>
+      <p>Designed and deployed scalable and reliable cloud infrastructure using Kubernetes and GCP. Automated provisioning, configuration, and management of environments to support efficient, repeatable, and version-controlled operations.</p>
+    </div>
+  </div>
+</section>
+
+<section class="box">
+  <h2><Icon icon="terminal-window" color="var(--accent-regular)" size="2rem" />Software Engineering Best Practices</h2>
+  <div class="skills">
+    <div class="stack gap-2 lg:gap-4">
+      <h3>Clean Code</h3>
+      <p>lorem ipsum</p>
+    </div>
+    <div class="stack gap-2 lg:gap-4">
+      <h3>Pair/Mob Programming</h3>
+      <p>lorem ipsum</p>
+    </div>
+    <div class="stack gap-2 lg:gap-4">
+      <h3>Mob Code Review</h3>
+      <p>lorem ipsum</p>
+    </div>
+    <div class="stack gap-2 lg:gap-4">
+      <h3>Test Driven Development</h3>
+      <p>lorem ipsum</p>
+    </div>
+    <div class="stack gap-2 lg:gap-4">
+      <h3>Feature Branch Development</h3>
+      <p>lorem ipsum</p>
+    </div>
+    <div class="stack gap-2 lg:gap-4">
+      <h3>Conventional Commits</h3>
+      <p>lorem ipsum</p>
+    </div>
+  </div>
+</section>
+
+<section class="box">
+  <h2><Icon icon="terminal-window" color="var(--accent-regular)" size="2rem" />Technologies</h2>
+  <div class="skills">
+    <div class="stack gap-2 lg:gap-4">
+      <h3>Monorepo</h3>
+      <p>lorem ipsum</p>
+    </div>
+    <div class="stack gap-2 lg:gap-4">
+      <h3>TypeScript related tools</h3>
+      <p>Eslint, Prettier, Redux, Zod, React Hook Form</p>
+    </div>
+    <div class="stack gap-2 lg:gap-4">
+      <h3>DevOps</h3>
+      <p>Kubernetes, Docker, GCP</p>
+    </div>
+    <div class="stack gap-2 lg:gap-4">
+      <h3>External APIs</h3>
+      <p>Google (GCP, Drive, OAuth), Sellsy, PipeDrive & Chronopost</p>
+    </div>
+  </div>
+</section>
+
+<section class="box">
+  <h2><Icon icon="terminal-window" color="var(--accent-regular)" size="2rem" />Soft Skills</h2>
+  <div class="skills">
+    <div class="stack gap-2 lg:gap-4">
+      <h3>Tech Leader</h3>
+      <p>lorem ipsum</p>
+    </div>
+    <div class="stack gap-2 lg:gap-4">
+      <h3>Mentoring/Coaching</h3>
+      <p>lorem ipsum</p>
+    </div>
+    <div class="stack gap-2 lg:gap-4">
+      <h3>Strategy-Minded</h3>
+      <p>lorem ipsum</p>
+    </div>
+    <div class="stack gap-2 lg:gap-4">
+      <h3>Non Violent Communication</h3>
+      <p>lorem ipsum</p>
+    </div>
+    <div class="stack gap-2 lg:gap-4">
+      <h3>Servant Leadership</h3>
+      <p>lorem ipsum</p>
+    </div>
+    <div class="stack gap-2 lg:gap-4">
+      <h3>Empathy</h3>
+      <p>lorem ipsum</p>
+    </div>
+  </div>
+</section>
+
+
+<style>
+	.box {
+		border: 1px solid var(--gray-800);
+		border-radius: 0.75rem;
+		padding: 1.5rem;
+		background-color: var(--gray-999_40);
+		box-shadow: var(--shadow-sm);
+
+    h2 {
+      text-align: center;
+      font-size: var(--text-xl);
+      margin-bottom: 3rem;
+    }
+	}
+
+	.skills {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	.skills h3 {
+		font-size: var(--text-lg);
+	}
+
+	.skills p {
+		color: var(--gray-400);
+	}
+
+	@media (min-width: 50em) {
+		.box {
+			border-radius: 1.5rem;
+			padding: 2.5rem;
+		}
+
+		.skills {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 5rem;
+		}
+
+		.skills h2 {
+			font-size: var(--text-2xl);
+		}
+	}
+</style>

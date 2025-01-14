@@ -4,6 +4,7 @@ import Hero from '../components/Hero.astro';
 import { Image } from 'astro:assets';
 import myPortrait from '../assets/maxime-bernard.jpeg';
 import ContactCTA from '../components/ContactCTA.astro';
+import Skills from '../components/Skills.astro';
 // Component Imports
 // import CallToAction from '../components/CallToAction.astro';
 // import Grid from '../components/Grid.astro';
@@ -40,7 +41,7 @@ import ContactCTA from '../components/ContactCTA.astro';
 			</header>
 
 			
-			<!-- <Skills /> -->
+			<Skills />
 		</div>
 		<ContactCTA />
 	</div>
@@ -69,6 +70,7 @@ import ContactCTA from '../components/ContactCTA.astro';
 	@media (min-width: 50em) {
 		.hero {
 			display: grid;
+			/* display: none; */
 			grid-template-columns: 6fr 4fr;
 			padding-inline: 2.5rem;
 			gap: 3.75rem;
