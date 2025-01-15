@@ -1,0 +1,36 @@
+---
+import Icon from "./Icon.astro";
+---
+<section class="box">
+  <h2><Icon icon="hourglass" color="var(--accent-regular)" size="2rem" />Education</h2>
+  <div>
+    <h3>Master of Computer Engineering | EPITA | 2006-2011</h3>
+    <h3>TOEIC 865 | 2011</h3>
+  </div>
+</section>
+
+<style>
+	.box {
+		border: 1px solid var(--gray-800);
+		border-radius: 0.75rem;
+		background-color: var(--gray-999_40);
+		box-shadow: var(--shadow-sm);
+
+    h2 {
+      text-align: center;
+      font-size: var(--text-xl);
+      margin-bottom: 3rem;
+      margin: 1.5rem;
+    }
+
+    h3 {
+      font-size: var(--text-lg);
+      margin-bottom: 1rem;
+    }
+
+    &>div {
+      padding: 1.5rem;
+      border-top: 1px solid var(--gray-800);
+    }
+	}
+</style>

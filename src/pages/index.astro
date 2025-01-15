@@ -5,6 +5,8 @@ import { Image } from 'astro:assets';
 import myPortrait from '../assets/maxime-bernard.jpeg';
 import ContactCTA from '../components/ContactCTA.astro';
 import Skills from '../components/Skills.astro';
+import Experience from '../components/Experience.astro';
+import Education from '../components/Education.astro';
 // Component Imports
 // import CallToAction from '../components/CallToAction.astro';
 // import Grid from '../components/Grid.astro';
@@ -40,8 +42,9 @@ import Skills from '../components/Skills.astro';
 				<Image src={myPortrait} alt="Portrait of Maxime Bernard smiling" width={480}/>
 			</header>
 
-			
 			<Skills />
+			<Experience />
+			<Education />
 		</div>
 		<ContactCTA />
 	</div>
