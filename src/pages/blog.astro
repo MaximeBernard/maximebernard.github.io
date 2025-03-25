@@ -1,50 +1,19 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.astro';
-import { Image } from 'astro:assets';
-import myPortrait from '../assets/maxime-bernard.jpeg';
 import ContactCTA from '../components/ContactCTA.astro';
-import Skills from '../components/Skills.astro';
-import Experience from '../components/Experience.astro';
-import Education from '../components/Education.astro';
-// Component Imports
-// import CallToAction from '../components/CallToAction.astro';
-// import Grid from '../components/Grid.astro';
-// import Icon from '../components/Icon.astro';
-// import Pill from '../components/Pill.astro';
-// import PortfolioPreview from '../components/PortfolioPreview.astro';
-
-// // Page section components
-// import ContactCTA from '../components/ContactCTA.astro';
-// import Skills from '../components/Skills.astro';
-
-
-// Full Astro Component Syntax:
-// https://docs.astro.build/basics/astro-components/
 ---
 <Layout>
 	<div class="stack gap-20 lg:gap-48">
 		<div class="wrapper stack gap-8 lg:gap-20">
 			<header class="hero">
 				<Hero
-					title="Hello, my name is Maxime Bernard"
-					tagline="I am a Engineering Manager living in Paris."
+					title=""
+					tagline="Blog under construction."
 					align="start"
 				>
-					<!-- <div class="roles">
-						<Pill><Icon icon="code" size="1.33em" /> Developer</Pill>
-						<Pill><Icon icon="microphone-stage" size="1.33em" /> Speaker</Pill>
-						<Pill><Icon icon="pencil-line" size="1.33em" /> Writer</Pill>
-					</div> -->
-					<p>This is my CV, feel free to reach out.</p>
 				</Hero>
-
-				<Image src={myPortrait} alt="Portrait of Maxime Bernard smiling" width={480}/>
 			</header>
-
-			<Skills />
-			<Experience />
-			<Education />
 		</div>
 		<ContactCTA />
 	</div>

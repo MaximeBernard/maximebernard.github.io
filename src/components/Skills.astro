@@ -67,19 +67,30 @@ import Icon from "./Icon.astro";
   <div class="skills">
     <div class="stack gap-2 lg:gap-4">
       <h3>Monorepo</h3>
-      <p>lorem ipsum</p>
+      <p>I discovered the benefits of Monorepo during my time at Société Générale in 2018. It fosters consistency and synchronicity between teams by enabling shared codebases, streamlined dependency management, and improved collaboration across projects.</p>
     </div>
     <div class="stack gap-2 lg:gap-4">
-      <h3>TypeScript related tools</h3>
-      <p>Eslint, Prettier, Redux, Zod, React Hook Form</p>
+      <h3>Code related libs & tools</h3>  
+      <ul>
+        <li><strong>Eslint</strong> to enforce code convention</li>
+        <li><strong>Prettier</strong> to enforce code formatting</li>
+        <li><strong>Redux</strong> to share a global state accross your application</li>
+        <li><strong>Zod</strong> to enforce object validation</li>
+        <li><strong>React Hook Form</strong> to validate forms</li>
+      </ul>
     </div>
     <div class="stack gap-2 lg:gap-4">
       <h3>DevOps</h3>
-      <p>Kubernetes, Docker, GCP</p>
+      <ul>
+        <li><strong>Kubernetes</strong> is a great tool to deploy and scale your applications</li>
+        <li><strong>Docker</strong> is obviously a mandatory pairing and helps you manage versions of your applications</li>
+        <li><strong>Github Actions</strong> works great to automate all your CI/CD</li>
+        <li><strong>GCP</strong> is the cloud platform I used the most but, to be fair, AWS and Azure are very similar.</li>
+      </ul>
     </div>
     <div class="stack gap-2 lg:gap-4">
       <h3>External APIs</h3>
-      <p>Google (GCP, Drive, OAuth), Sellsy, PipeDrive & Chronopost</p>
+      <p>I've worked a lot with API from Google (GCP, Drive, OAuth), Sellsy, PipeDrive & Chronopost. I recommend doing a microservice over those API to reduce complexity, centralize error management, improve security (reducing sharing secrets), easier testing and mocking and the ability to reuse this service accross multiple applications.</p>
     </div>
   </div>
 </section>
@@ -89,27 +100,27 @@ import Icon from "./Icon.astro";
   <div class="skills">
     <div class="stack gap-2 lg:gap-4">
       <h3>Tech Leader</h3>
-      <p>lorem ipsum</p>
+      <p>With 15 years of consulting experience, I’ve gained valuable insights to make informed decisions. However, I believe that team validation is essential for successful implementation.</p>
     </div>
     <div class="stack gap-2 lg:gap-4">
       <h3>Mentoring/Coaching</h3>
-      <p>lorem ipsum</p>
+      <p>I enjoy sharing knowledge and helping others grow in their careers. I believe that learning is a two-way process, and through one-on-one mentoring, code reviews, or team workshops, I aim to foster a supportive environment that encourages growth, collaboration, and shared understanding.</p>
     </div>
     <div class="stack gap-2 lg:gap-4">
       <h3>Strategy-Minded</h3>
-      <p>lorem ipsum</p>
+      <p>I excel at devising technical solutions that align with business objectives, ensuring projects deliver meaningful value and achieve long-term success. By anticipating challenges, weighing trade-offs, and planning strategically, I help teams stay focused and navigate complexities effectively.</p>
     </div>
     <div class="stack gap-2 lg:gap-4">
       <h3>Non Violent Communication</h3>
-      <p>lorem ipsum</p>
+      <p>I was inspired by Marshall Rosenberg's book on Nonviolent Communication, which Satya Nadella recommended to Microsoft employees. It profoundly changed my perspective, and I strive to apply its principles daily to foster understanding, empathy, and effective collaboration.</p>
     </div>
     <div class="stack gap-2 lg:gap-4">
       <h3>Servant Leadership</h3>
-      <p>lorem ipsum</p>
+      <p>I believe in empowering teams by prioritizing their needs and removing obstacles that hinder their success. By fostering trust, collaboration, and a shared sense of purpose, I aim to create an environment where individuals can thrive and deliver their best work.</p>
     </div>
     <div class="stack gap-2 lg:gap-4">
       <h3>Empathy</h3>
-      <p>lorem ipsum</p>
+      <p>Empathy is one of my core strengths, enabling me to connect with others and understand their perspectives. It plays a crucial role in my ability to be an effective servant leader and to practice nonviolent communication in both personal and professional settings.</p>
     </div>
   </div>
 </section>
@@ -134,14 +145,14 @@ import Icon from "./Icon.astro";
 		display: flex;
 		flex-direction: column;
 		gap: 3rem;
-	}
 
-	.skills h3 {
-		font-size: var(--text-lg);
-	}
+    p, ul {
+      color: var(--gray-400);
+    }
 
-	.skills p {
-		color: var(--gray-400);
+    h3 {
+      font-size: var(--text-lg);
+    }
 	}
 
 	@media (min-width: 50em) {
